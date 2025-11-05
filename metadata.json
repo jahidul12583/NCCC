@@ -1,0 +1,5 @@
+{
+  "name": "Coaching Management Admin Dashboard",
+  "description": "A web-based admin dashboard for a coaching management system. It allows administrators to manage students, teachers, batches, payments, and view key analytics and reports.",
+  "requestFramePermissions": []
+}
