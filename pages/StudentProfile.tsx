@@ -1,10 +1,10 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { getStudentById, getBatches, getPaymentsByStudentId, getAttendanceForStudent, getMarksByStudentId, getExams, updateStudent } from '../services/api';
-import { Student, Batch, Payment, AttendanceRecord, Mark, Exam } from '../types';
+import { getStudentById, getBatches, getPaymentsByStudentId, getAttendanceForStudent, getMarksByStudentId, getExams, updateStudent } from '/services/api.ts';
+import { Student, Batch, Payment, AttendanceRecord, Mark, Exam } from '/types.ts';
 import { User, Phone, Mail, Home, BookOpen, Calendar, DollarSign, Edit, Trash2, FileDown, CheckCircle, XCircle } from 'lucide-react';
 import { BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar } from 'recharts';
-import Modal from '../components/Modal';
+import Modal from '/components/Modal.tsx';
 import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
 

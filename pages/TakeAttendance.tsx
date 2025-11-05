@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { getBatches, getStudents, getAttendanceForBatchAndDate, saveAttendanceRecord } from '../services/api';
-import { Batch, Student, AttendanceRecord } from '../types';
+import { getBatches, getStudents, getAttendanceForBatchAndDate, saveAttendanceRecord } from '/services/api.ts';
+import { Batch, Student, AttendanceRecord } from '/types.ts';
 import { Check, X, User, Users } from 'lucide-react';
 
 type AttendanceStatus = 'present' | 'absent';

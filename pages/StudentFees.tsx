@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import DataTable from '../components/DataTable';
-import { getPayments, getStudents, addPayment, updatePayment, deletePayment } from '../services/api';
-import { Payment, Student } from '../types';
+import DataTable from '/components/DataTable.tsx';
+import { getPayments, getStudents, addPayment, updatePayment, deletePayment } from '/services/api.ts';
+import { Payment, Student } from '/types.ts';
 import { DollarSign } from 'lucide-react';
-import Modal from '../components/Modal';
+import Modal from '/components/Modal.tsx';
 
 const StudentFees: React.FC = () => {
     const [payments, setPayments] = useState<Payment[]>([]);

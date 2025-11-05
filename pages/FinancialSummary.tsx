@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { getFinancialSummaryForMonth, getTeachers, getStaff } from '../services/api';
-import { FinancialSummary, Teacher, Staff } from '../types';
-import DashboardCard from '../components/DashboardCard';
-import DataTable from '../components/DataTable';
+import { getFinancialSummaryForMonth, getTeachers, getStaff } from '/services/api.ts';
+import { FinancialSummary, Teacher, Staff } from '/types.ts';
+import DashboardCard from '/components/DashboardCard.tsx';
+import DataTable from '/components/DataTable.tsx';
 import { ArrowUpRight, ArrowDownLeft, Wallet, FileDown } from 'lucide-react';
 import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';

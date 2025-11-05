@@ -1,9 +1,8 @@
-
 import React, { useState, useEffect, useMemo } from 'react';
-import { getTeachers, getTeacherSalaries, addOrUpdateTeacherSalary, getTeacherClassCountForMonth } from '../services/api';
-import { Teacher, TeacherSalary, SalaryAdjustment, SalaryPaymentHistory } from '../types';
-import DataTable from '../components/DataTable';
-import Modal from '../components/Modal';
+import { getTeachers, getTeacherSalaries, addOrUpdateTeacherSalary, getTeacherClassCountForMonth } from '/services/api.ts';
+import { Teacher, TeacherSalary, SalaryAdjustment, SalaryPaymentHistory } from '/types.ts';
+import DataTable from '/components/DataTable.tsx';
+import Modal from '/components/Modal.tsx';
 import { PlusCircle, Trash2 } from 'lucide-react';
 
 const TeacherSalaries: React.FC = () => {

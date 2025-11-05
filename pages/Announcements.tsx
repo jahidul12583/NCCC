@@ -1,7 +1,6 @@
-
 import React, { useState, useEffect } from 'react';
-import { getAnnouncements } from '../services/api';
-import { Announcement } from '../types';
+import { getAnnouncements } from '/services/api.ts';
+import { Announcement } from '/types.ts';
 import { Megaphone, PlusCircle } from 'lucide-react';
 
 const Announcements: React.FC = () => {

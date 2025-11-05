@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { getTeacherById, getCourses, getBatches, getTeacherSalaryHistory, updateTeacher } from '../services/api';
-import { Teacher, Course, Batch, TeacherSalary } from '../types';
+import { getTeacherById, getCourses, getBatches, getTeacherSalaryHistory, updateTeacher } from '/services/api.ts';
+import { Teacher, Course, Batch, TeacherSalary } from '/types.ts';
 import { User, Phone, Mail, Home, Book, Calendar, DollarSign, Edit, Trash2, FileDown, Briefcase } from 'lucide-react';
-import Modal from '../components/Modal';
+import Modal from '/components/Modal.tsx';
 import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
 

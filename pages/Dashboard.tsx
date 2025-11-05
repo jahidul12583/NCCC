@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import DashboardCard from '../components/DashboardCard';
+import DashboardCard from '/components/DashboardCard.tsx';
 import { Users, UserCheck, BookOpen, DollarSign, Briefcase } from 'lucide-react';
 import { BarChart as RechartsBarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import { getDashboardStats, getIncomeExpenseData, getAttendanceData } from '../services/api';
-import { DashboardStats, IncomeExpenseData, AttendanceData } from '../types';
-import { getDashboardInsights } from '../services/geminiService';
+import { getDashboardStats, getIncomeExpenseData, getAttendanceData } from '/services/api.ts';
+import { DashboardStats, IncomeExpenseData, AttendanceData } from '/types.ts';
+import { getDashboardInsights } from '/services/geminiService.ts';
 
 const Dashboard: React.FC = () => {
     const [stats, setStats] = useState<DashboardStats | null>(null);

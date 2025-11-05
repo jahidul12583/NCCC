@@ -2,11 +2,11 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import DataTable from '../components/DataTable';
-import { getStaff, addStaff, updateStaff, deleteStaffById } from '../services/api';
-import { Staff, Role } from '../types';
+import DataTable from '/components/DataTable.tsx';
+import { getStaff, addStaff, updateStaff, deleteStaffById } from '/services/api.ts';
+import { Staff, Role } from '/types.ts';
 import { UserPlus } from 'lucide-react';
-import Modal from '../components/Modal';
+import Modal from '/components/Modal.tsx';
 
 const StaffPage: React.FC = () => {
     const [staff, setStaff] = useState<Staff[]>([]);

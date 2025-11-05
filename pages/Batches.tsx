@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { getBatches, getSchedules, getTeachers, getCourses } from '../services/api';
-import { Batch, Schedule, Teacher, ClassLevel, Shift, Course, Subject } from '../types';
+import { getBatches, getSchedules, getTeachers, getCourses } from '/services/api.ts';
+import { Batch, Schedule, Teacher, ClassLevel, Shift, Course, Subject } from '/types.ts';
 import { BookPlus, CalendarDays, Clock, User, Users, Briefcase, PlusCircle } from 'lucide-react';
-import Modal from '../components/Modal';
+import Modal from '/components/Modal.tsx';
 
 const Batches: React.FC = () => {
     const [batches, setBatches] = useState<Batch[]>([]);

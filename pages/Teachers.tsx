@@ -1,11 +1,10 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import DataTable from '../components/DataTable';
-import { getTeachers, getCourses, getBatches, deleteTeacherById, addTeacher, updateTeacher } from '../services/api';
-import { Teacher, Role, Course, Batch } from '../types';
+import DataTable from '/components/DataTable.tsx';
+import { getTeachers, getCourses, getBatches, deleteTeacherById, addTeacher, updateTeacher } from '/services/api.ts';
+import { Teacher, Role, Course, Batch } from '/types.ts';
 import { UserPlus } from 'lucide-react';
-import Modal from '../components/Modal';
+import Modal from '/components/Modal.tsx';
 
 const Teachers: React.FC = () => {
     const [teachers, setTeachers] = useState<Teacher[]>([]);

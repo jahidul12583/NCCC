@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Menu, Bell, User, Search, X } from 'lucide-react';
 import { useLocation, Link, useNavigate } from 'react-router-dom';
-import { NAV_ITEMS } from '../constants';
-import { searchProfiles } from '../services/api';
-import { Teacher, Student, Staff } from '../types';
+import { NAV_ITEMS } from '/constants.tsx';
+import { searchProfiles } from '/services/api.ts';
+import { Teacher, Student, Staff } from '/types.ts';
 
 interface HeaderProps {
   setSidebarOpen: (open: boolean) => void;

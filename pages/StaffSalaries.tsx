@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { getStaff, getStaffSalaries, addOrUpdateStaffSalary } from '../services/api';
-import { Staff, StaffSalary, SalaryPaymentHistory } from '../types';
-import DataTable from '../components/DataTable';
-import Modal from '../components/Modal';
+import { getStaff, getStaffSalaries, addOrUpdateStaffSalary } from '/services/api.ts';
+import { Staff, StaffSalary, SalaryPaymentHistory } from '/types.ts';
+import DataTable from '/components/DataTable.tsx';
+import Modal from '/components/Modal.tsx';
 import { PlusCircle } from 'lucide-react';
 
 const StaffSalaries: React.FC = () => {

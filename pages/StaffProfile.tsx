@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { useParams } from 'react-router-dom';
-import { getStaffById, getStaffSalaryHistory, updateStaff } from '../services/api';
-import { Staff, StaffSalary } from '../types';
+import { getStaffById, getStaffSalaryHistory, updateStaff } from '/services/api.ts';
+import { Staff, StaffSalary } from '/types.ts';
 import { User, Phone, Mail, Home, Calendar, DollarSign, Edit, FileDown, Briefcase } from 'lucide-react';
-import Modal from '../components/Modal';
+import Modal from '/components/Modal.tsx';
 import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
 

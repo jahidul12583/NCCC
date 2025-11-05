@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { getBatches, getAttendanceRecordsByBatch, getStudents } from '../services/api';
-import { Batch, Student, AttendanceRecord } from '../types';
-import Modal from '../components/Modal';
+import { getBatches, getAttendanceRecordsByBatch, getStudents } from '/services/api.ts';
+import { Batch, Student, AttendanceRecord } from '/types.ts';
+import Modal from '/components/Modal.tsx';
 
 const AttendanceRecords: React.FC = () => {
     const [batches, setBatches] = useState<Batch[]>([]);
